@@ -1,0 +1,130 @@
+.page {
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 1.2rem 1.5rem;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.back:hover { color: var(--dark); }
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.titleBlock {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heartGold {
+  color: var(--gold);
+  display: inline-flex;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 0.35rem;
+  line-height: 1.15;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.form {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem 1.8rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--gold-dark);
+}
+
+.input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--dark);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input::placeholder { color: #c0b5a8; }
+.input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
+}
+
+.errorMsg {
+  font-size: 0.88rem;
+  color: #c0392b;
+  text-align: center;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1.05rem;
+  border-radius: 100px;
+  background: linear-gradient(135deg, #b8952a 0%, #e2c155 40%, #d4a83a 70%, #c9a030 100%);
+  color: #2a1a00;
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+  box-shadow: 0 4px 18px rgba(185, 140, 30, 0.3);
+  margin-top: 0.25rem;
+}
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(185, 140, 30, 0.4);
+}
+.submitBtn:disabled { opacity: 0.65; cursor: not-allowed; }

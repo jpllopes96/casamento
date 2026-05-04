@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --gold-dark: #7A5C12;      /* darker: legível sobre fundo claro (contraste ~5:1) */
+  --gold-btn: linear-gradient(135deg, #c9a84c 0%, #e8c96a 50%, #c9a84c 100%);
+  --cream: #FAF6F0;
+  --cream-dark: #F0E8DB;
+  --dark: #2D2A26;
+  --muted: #5C4D40;           /* era #8A7A6A — escurecido para melhor legibilidade */
+  --border: #E0D5C5;
+  --white: #ffffff;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.14);
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: var(--dark);
+  background: var(--cream);
+}
+
+input, button, a {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
