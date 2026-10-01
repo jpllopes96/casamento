@@ -106,7 +106,7 @@ export default function Confirmar() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Confirmar Presença – 17/04/2027</title>
+        <title>Isa & JP – Confirmar Presença – 17/04/2027</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -192,7 +192,8 @@ export default function Confirmar() {
           ))}
 
           <button type="button" className={styles.addBtn} onClick={addGuest}>
-            <PlusIcon /> Adicionar Acompanhante
+            <span className={styles.addBtnIcon}><PlusIcon /></span>
+            Adicionar Convidado
           </button>
 
           <button type="submit" className={styles.submitBtn} disabled={loading}>

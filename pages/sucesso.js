@@ -10,7 +10,7 @@ export default function Sucesso() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Presença Confirmada – 17/04/2027</title>
+        <title>Isa & JP – Presença Confirmada – 17/04/2027</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 

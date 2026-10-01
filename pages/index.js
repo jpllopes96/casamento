@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Save the Date – 17/04/2027</title>
+        <title>Isa & JP – Save the Date – 17/04/2027</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -24,13 +24,13 @@ export default function Home() {
             </span>
           </div>
 
+          <div className={styles.time}>Sábado, às 16h00</div>
+
           <div className={styles.location}>
             <span className={styles.pinIcon}><PinIcon /></span>
             <span>
               Restaurante Lago da Serra – Estr. Serra da Paulista, KM 5<br />
               Córrego Fundo, São João da Boa Vista – SP
-              <br />
-              <span className={styles.time}>Sábado, às 16h00</span>
             </span>
           </div>
 
@@ -40,7 +40,12 @@ export default function Home() {
               CONFIRMAR PRESENÇA
             </Link>
 
-            <a href="#" className={styles.btn}>
+            <a
+              href="https://lojajpeisa.jplabs.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.btn}
+            >
               <GiftIcon />
               LISTA DE PRESENTES
             </a>
