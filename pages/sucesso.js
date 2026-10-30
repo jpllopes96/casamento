@@ -41,7 +41,12 @@ export default function Sucesso() {
             <span className={styles.dateTime}>Sábado, 17 de Abril · às 16h00</span>
           </div>
 
-          <a href="#" className={styles.btn}>
+          <a
+            href="https://lojajpeisa.jplabs.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btn}
+          >
             <GiftIcon /> LISTA DE PRESENTES
           </a>
 
